@@ -4,8 +4,8 @@ document.getElementById('donate-1').addEventListener('click',function (event) {
           
      let totalBalance= balance('main-balance')
      let donation= donationNumber('noakhali-input');
-     if (isNaN(donation)) {
-          alert('stop')
+     if (isNaN(donation) || donation<=0) {
+          alert('Invalid Donation Amount')
         
     
           
@@ -29,7 +29,7 @@ document.getElementById('donate-1').addEventListener('click',function (event) {
             const div= document.createElement('div');
             div.classList.add('border-2', 'p-4', 'rounded-xl', 'shadow-sm', 'mb-3')
             div.innerHTML= `
-                 <h4 class="text-xl font-bold mb-2">${donation} Taka is Donated for Flood Relief at Noakhali, Bangladesh..</h4>
+                 <h4 class="text-xl font-bold mb-2">${donation} Taka is Donated for Flood Relief at Noakhali, Bangladesh.</h4>
             
             <p class="text-sm"> ${donationTime}</p>
             `
@@ -45,7 +45,7 @@ document.getElementById('donate-2').addEventListener('click',function (event) {
      let totalBalance= balance('main-balance')
      let donation= donationNumber('feni-input');
      if (isNaN(donation)) {
-          alert('stop')
+          alert('Invalid Donation Amount')
         
     
           
@@ -85,7 +85,7 @@ document.getElementById('donate-3').addEventListener('click',function (event) {
      let totalBalance= balance('main-balance')
      let donation= donationNumber('quota-input');
      if (isNaN(donation)) {
-          alert('stop')
+          alert('Invalid Donation Amount')
         
     
           
