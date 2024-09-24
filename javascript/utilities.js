@@ -3,7 +3,26 @@
 //           header.classList.add('fixed')
 // }})
 
+// const navbar = document.querySelector('.navbar');
 
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 0) {
+//     navbar.classList.add('fixed');
+//   } else {
+//     navbar.classList.remove('fixed');
+//   }
+// });
+// const navbar = document.querySelector('.navbar');
+// window.addEventListener('scroll',function(){
+//      if(this.window.scrollY>0){
+//      navbar.classList.add('fixed')
+
+     
+// }
+// else{
+//      navbar.classList.remove('fixed')
+// }
+// })
 
 function donationNumber (id) {
     let value= document.getElementById(id).value;

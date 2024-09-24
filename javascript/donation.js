@@ -44,7 +44,7 @@ document.getElementById('donate-2').addEventListener('click',function (event) {
           
      let totalBalance= balance('main-balance')
      let donation= donationNumber('feni-input');
-     if (isNaN(donation)) {
+     if (isNaN(donation)|| donation<=0) {
           alert('Invalid Donation Amount')
         
     
@@ -84,7 +84,7 @@ document.getElementById('donate-3').addEventListener('click',function (event) {
           
      let totalBalance= balance('main-balance')
      let donation= donationNumber('quota-input');
-     if (isNaN(donation)) {
+     if (isNaN(donation)|| donation<=0) {
           alert('Invalid Donation Amount')
         
     
