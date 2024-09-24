@@ -15,7 +15,7 @@ document.getElementById('donate-1').addEventListener('click',function (event) {
           
     
     
-    if (donation<=0) {
+    if (isNaN(donation) || donation<=0) {
           alert('Invalid Donation Amount')
         
     
@@ -69,7 +69,7 @@ document.getElementById('donate-2').addEventListener('click',function (event) {
 
 
 
-     if ( donation<=0) {
+     if (isNaN(donation)|| donation<=0) {
           alert('Invalid Donation Amount')
         
     
@@ -120,7 +120,7 @@ document.getElementById('donate-3').addEventListener('click',function (event) {
      }
 
 
-     if (donation<=0) {
+     if (isNaN(donation)|| donation<=0) {
           alert('Invalid Donation Amount')
         
     
