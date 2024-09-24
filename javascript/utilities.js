@@ -1,5 +1,5 @@
 
-
+//common function
 function donationNumber (id) {
     let value= document.getElementById(id).value;
     const amount = parseFloat(value);

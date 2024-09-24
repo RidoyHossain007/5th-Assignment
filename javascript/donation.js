@@ -1,21 +1,35 @@
 document.getElementById('donate-1').addEventListener('click',function (event) {
      event.preventDefault();
-     
-          
+
+
      let totalBalance= balance('main-balance')
      let donation= donationNumber('noakhali-input');
-     if (isNaN(donation) || donation<=0) {
+     let inputs = document.getElementById('noakhali-input').value;
+     for (const number of inputs ) {
+          if (isNaN(number)) {
+               alert('Invalid Donation Amount')
+               document.getElementById('noakhali-input').value=''
+              return
+          }
+     }
+          
+    
+    
+    if (donation<=0) {
           alert('Invalid Donation Amount')
         
     
           
      } 
+  
+
+     
      else if (totalBalance<=0 || donation>totalBalance ) {
           alert('Insufficient Balance')
      }
      
      
-    else{
+    else {
      let noakhaliDonations=balance('noakhali-donation')
      let totalDonation = noakhaliDonations + donation;
      document.getElementById('noakhali-donation').innerText=totalDonation;
@@ -44,7 +58,18 @@ document.getElementById('donate-2').addEventListener('click',function (event) {
           
      let totalBalance= balance('main-balance')
      let donation= donationNumber('feni-input');
-     if (isNaN(donation)|| donation<=0) {
+     let inputs = document.getElementById('feni-input').value;
+     for (const number of inputs ) {
+          if (isNaN(number)) {
+               alert('Invalid Donation Amount')
+               document.getElementById('feni-input').value=''
+              return
+          }
+     }
+
+
+
+     if ( donation<=0) {
           alert('Invalid Donation Amount')
         
     
@@ -84,7 +109,18 @@ document.getElementById('donate-3').addEventListener('click',function (event) {
           
      let totalBalance= balance('main-balance')
      let donation= donationNumber('quota-input');
-     if (isNaN(donation)|| donation<=0) {
+
+     let inputs = document.getElementById('quota-input').value;
+     for (const number of inputs ) {
+          if (isNaN(number)) {
+               alert('Invalid Donation Amount')
+               document.getElementById('quota-input').value=''
+              return
+          }
+     }
+
+
+     if (donation<=0) {
           alert('Invalid Donation Amount')
         
     
